@@ -1,63 +1,65 @@
-##First Form##
-Aplikacija FirstForm je mobilna aplikacija v jeziku Java, razvita v okolju Android Studio v okviru predmeta Razvoj mobilnih aplikacij.
-📌 Opis projekta
-Aplikacija vsebuje registracijski obrazec za zajem osnovnih uporabniških podatkov. Obrazec je prilagojen za prikaz na različnih velikostih zaslonov z uporabo gradnika ScrollView. Ob kliku na gumb za oddajo se vneseni podatki preberejo in prikažejo v večvrstičnem pogovornem oknu (AlertDialog).
-🚀 Funkcionalnosti
-•
-Uporabniški vmesnik ( activity_main.xml):
-◦
-Naslov: Registration Form
-◦
-Vnosna polja (EditText):
-▪
-Username
-▪
-Full Name
-▪
-Country
-▪
-Email
-▪
-Phone Number
-▪
-Password (z maskiranjem vnesenih znakov textPassword in navodilom hint)
-◦
-Izbira spola (RadioGroup & RadioButton):
-▪
-Možnosti Male in Female razporejeni vodoravno v eni vrstici.
-◦
-Potrditveno polje (CheckBox):
-▪
-Vodoravno osredinjeno potrditveno polje za pogoje uporabe.
-◦
-Gumb za oddajo (Button):
-▪
-Vodoravno osredinjen gumb nastavljen na 50 % širine zaslona.
-◦
-Odzivnost: Uporaba ScrollView zagotavlja dostopnost celotne vsebine tudi na manjših zaslonih.
-•
-Logika delovanja ( MainActivity.java):
-◦
-Ob kliku na gumb se preberejo vrednosti iz vseh vnosnih polj.
-◦
-Ugotovi se izbrana možnost spola (Male, Female ali Not specified).
-◦
-Preveri se stanje potrditvenega polja.
-◦
-Prikaže se pogovorno okno z naslovom Registration Details, ki vsebuje pregleden večvrstični izpis vseh podatkov ter jasen status pogojev uporabe (Terms Accepted: Yes oz. Terms Accepted: No).
-🛠️ Tehnologije
-•
-Programski jezik: Java
-•
-Gradnji sistem: Gradle
-•
-Uporabniški vmesnik: Android XML (ConstraintLayout, ScrollView, LinearLayout, AlertDialog)
-💻 Navodila za zagon
-1.
-Odprite mapo projekta FirstForm v Android Studio.
-2.
-Počakajte, da se zaključi sinhronizacija Gradle projekta (Gradle Sync).
-3.
-Zaženite aplikacijo na Android emulatorju ali fizični napravi z ukazom Run 'app' (Shift + F10).
-4.
-Izpolnite polja obrazca in kliknite gumb za oddajo, da preizkusite delovanje pogovornega okna.
+
+# FirstForm – Registration Form
+
+The **FirstForm** application is a mobile application developed in Java using Android Studio as part of the **Mobile Application Development** course.
+
+## 📌 Project Description
+
+The application contains a registration form for collecting basic user information. The form is designed to adapt to different screen sizes using the `ScrollView` component. When the user clicks the submit button, the entered data is retrieved and displayed in a multiline dialog box (`AlertDialog`).
+
+## 🚀 Features
+
+### User Interface (`activity_main.xml`)
+
+- **Title:** Registration Form
+- **Input fields (`EditText`):**
+  - Username
+  - Full Name
+  - Country
+  - Email
+  - Phone Number
+  - Password (with masked characters and an appropriate `hint`)
+- **Gender selection (`RadioGroup` and `RadioButton`):**
+  - Male
+  - Female
+  - Both options are arranged horizontally in a single row.
+- **Checkbox (`CheckBox`):**
+  - Agree with Terms & Conditions
+- **Submit button (`Button`):**
+  - Create account
+  - The button is horizontally centered and set to 50% of the screen width.
+- **Responsive layout:** The `ScrollView` component ensures that all content remains accessible on smaller screens.
+
+### Application Logic (`MainActivity.java`)
+
+When the user clicks the **Create account** button, the application:
+
+1. Retrieves the values from all input fields.
+2. Identifies the selected gender (`Male`, `Female`, or `Not specified`).
+3. Checks the state of the checkbox.
+4. Prepares a multiline summary of the entered information.
+5. Displays a dialog box titled **Registration Details** using the `AlertDialog.Builder` class.
+6. Displays the terms and conditions acceptance status:
+   - `Terms Accepted: Yes`
+   - `Terms Accepted: No`
+
+## 🛠️ Technologies Used
+
+- **Programming language:** Java
+- **Development environment:** Android Studio
+- **Build system:** Gradle
+- **User interface:** Android XML
+- **UI components:** `ConstraintLayout`, `ScrollView`, `LinearLayout`, `EditText`, `RadioGroup`, `RadioButton`, `CheckBox`, and `Button`
+- **Dialog box:** `AlertDialog.Builder`
+
+## 💻 How to Run the Application
+
+1. Open the `FirstForm` project folder in Android Studio.
+2. Wait for the Gradle project synchronization (Gradle Sync) to complete.
+3. Start an Android emulator or connect a physical Android device.
+4. Click **Run 'app'** or use the keyboard shortcut `Shift + F10`.
+5. Wait for the application to install and launch.
+6. Fill in all the registration form fields.
+7. Select a gender and optionally accept the terms and conditions.
+8. Click the **Create account** button.
+9. Review the summary of the entered information in the **Registration Details** dialog box.
