@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">FirstForm</string>
+    <string name="title">Registration Form</string>
+
+    <string name="username">Username</string>
+    <string name="full_name">Full Name</string>
+    <string name="country">Country</string>
+    <string name="mail">Email</string>
+    <string name="phone">Phone Number</string>
+    <string name="password">Password</string>
+
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
+    <string name="terms_and_conditions">I agree With the terms and conditions</string>
+    <string name="submit">Submit</string>
+
+
+</resources>
